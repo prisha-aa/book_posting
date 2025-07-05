@@ -5,7 +5,7 @@ import mongoose, { Schema, model } from "mongoose";
 const BookSchema = new Schema<Book>({
     id: {type:String, required:true, unique:true},
     title: String,
-    autor: String,
+    author: String,
     publishedYear: Number
 });
 

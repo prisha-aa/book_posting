@@ -2,8 +2,10 @@ import express from "express";
 import { BookService } from "./core/services/BookService";
 import { InMemoryBookRepository } from "./adapters/out/InMemoryBookRepository";
 import { createBookApi } from "./adapters/in/BookApiController";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 
